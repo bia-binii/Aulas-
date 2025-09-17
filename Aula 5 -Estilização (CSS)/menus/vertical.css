@@ -1,0 +1,23 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: pink;
+    
+    width: 200px;
+}
+li {
+    float: none;
+    border-bottom: 2px solid plum;
+}
+li {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+li:hover {
+    text-decoration: double;
+    font-size: 20px
+}

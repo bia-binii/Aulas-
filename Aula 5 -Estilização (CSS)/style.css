@@ -1,0 +1,40 @@
+/* *= Aplica a todos os elementos.*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .classe= Reutilizável em vários elementos.*/
+.destaque {
+    color:blue;
+    font-weight: bold;
+}
+/* #id= Único, para um elemento específico. */
+#titulo-principal {
+    color:red;
+    text-align: center;
+}
+/* tag= Altera todos os elementos daquela teg. */
+p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* h1,h2,h3= Agrupamento de setores. */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color:darkgreen;
+}
+h4{
+    line-height: 1.5; /*espaço entre linhas*/
+    letter-spacing: 2px; /*espaço entre letras*/
+    word-spacing: 5px; /*espaço entre palavras*/
+}
+img{
+    width: 200px;
+    border:2px solid black;
+    display:block; /*faz o elemento se comportar como um bloco(somente ela na linha-sozinha)*/
+    margin:auto; /*centraliza o elemento horizontalmente, desde que tenha uma largura(width) definida*/
+}
+ul{
+    list-style-type: disc;
+}
