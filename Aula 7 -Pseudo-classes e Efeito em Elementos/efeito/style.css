@@ -1,0 +1,44 @@
+/*1 Transition - mudanças suaves entre estados */
+button {  
+    background-color: rgb(255, 0, 128);
+    color: wheat;
+    transition: background 0.3s ease; /*duração e efeito*/
+}
+
+button:hover {
+    background-color: orange;
+}  
+/*2 Animation - keyframes e animações personalizadas*/
+@keyframes piscar {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+div {
+    animation: piscar 5s infinite;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 128);
+    text-align: center;
+    color: white;
+} 
+div:hover {
+    transform: translate(20px, 20px);
+}
+/* rotate - rotação de elementos */
+img:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+} 
+/* scale - aumenta/ diminui de elementos */
+button:hover {
+    transform: scale(1.2); /*aumenta 20% */
+}
+#div1 {
+    background: -linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    width: 100px;
+}
+#div2 {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    width: 100px;
+}
