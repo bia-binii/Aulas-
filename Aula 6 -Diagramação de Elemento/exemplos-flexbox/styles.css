@@ -36,7 +36,7 @@ h2 {
     flex-direction: column;
 }
 .wrap {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .justificar-inicio {
     justify-content: start; /**/
@@ -75,4 +75,72 @@ h2 {
 }
 .alinhar-baseline {
     align-items: baseline;
+}
+
+/*5.1 Alinhamento de linhas (align-content)*/
+.alinhar-conteudo {
+    align-content: space-evenly;
+    height: 600px; /*Definir altura para demonstrar align-content*/
+}
+.alinhar-conteudo .caixa {
+    flex: 0 0 30%; /*Para aumentar e fazer com que surja a quebra de linha*/
+}
+.caixa {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/*6. Ordenação dos Itens Flex (order)*/
+.ordem1 {
+    order: 1;
+}
+.ordem2 {
+    order: 2;
+}
+.ordem3 {
+    order: 3;
+}
+
+/*7. Flex Grow, Shrink e Basis e flex*/
+.exemolo-grow .item-flex {
+    flex-basis: 100px;
+}
+.crescer {
+    flex-grow: 1;
+}
+.crescer-2 {
+    flex-grow: 2;
+}
+
+/*8. align-self-alinhar items-individuais */
+.alinhar-items-individuais .container-flex {
+    height: 300px;
+}
+.self-inicio {
+    align-self: start;
+}
+.self-centro {
+    align-self: center;
+}
+.self-fim {
+    align-self: end;
+}
+
+.menu-nav {
+    align-items: center;
+    height: 50px;
+    background-color: rgb(96, 96, 96);
+    display: flex;
+    justify-content: center;
+}
+.menu-nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: rgb(96, 96, 96);
+    margin: 0 5px;
+}
+.menu-nav a:hover {
+    background-color: rgb(96, 96, 96);
 }
